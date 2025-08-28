@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: MiSans, MI Lan Pro, serif;
+}
+/* 超链接下划线 */
+a{
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+img{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}

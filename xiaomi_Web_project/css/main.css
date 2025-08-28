@@ -1,0 +1,427 @@
+/* 内容 */
+.container{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s ease;
+    z-index: 99;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+    background-color: transparent;
+    overflow: hidden;
+}
+.header-nav .header-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+}
+.header-nav .logo,.header-nav .nav-menu,.header-nav .login-menu,.header-nav .login-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.header-nav .logo a{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.header-nav .nav-menu{
+    justify-content: center;
+    overflow: hidden;
+}
+.header-nav .nav-menu .menu-item:first-child a{
+    color: rgb(255, 105, 0);
+}
+.header-nav .nav-menu a:hover,.header-nav .login-menu a:hover{
+    color: rgb(255, 105, 0);
+}
+.header-nav .menu-item{
+    margin: 0 18px;
+}
+.header-nav .login-info a{
+    margin: 0 20px;
+}
+.header-nav .menu-item:last-child{
+    margin-right: 5px;
+}
+
+/* 轮播图 */
+.Carousel-swiper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.C_swiper{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+.C_swiper a{
+    flex: 0 0 auto; 
+        /* 确保每个链接元素占据其内容的宽度  */
+    width: 100%; 
+        /* 确保每个链接元素填满父容器的宽度  */
+    display: block; 
+        /* 确保链接元素是块级元素  */
+}
+.C_swiper img{
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.Carousel-swiper .swiper-btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 40px;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    /* 隐藏原素 */
+    display: none;
+    /* 鼠标箭头变小手 */
+    cursor: pointer;
+}
+
+.Carousel-swiper .swiper-btn.left {
+    left: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}
+
+.Carousel-swiper .swiper-btn.right {
+    right: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}   
+
+.Carousel-swiper:hover .swiper-btn {
+    display: block;
+}
+
+/* 轮播图底部小圆点 */
+.Carousel-swiper .swiper-dot {
+    display: flex;
+    /* 居中对齐 */
+    justify-content: center;
+    position: absolute;
+    bottom: 3.2vw;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.Carousel-swiper .swiper-dot span {
+    display: block;
+    width: 6vw;
+    height: 3px;
+    background-color: #b9b9b9;
+    margin: -1px;
+}
+
+/* 圆点导航的高亮效果 */
+.on {
+    background-color: rgb(255, 105, 0) !important;
+}
+
+/* 内容部分 */
+.Cantral img{
+    margin-bottom: 12px;
+}
+.Cantral > a:last-child img{
+    margin-bottom: 0;
+}
+.Cantral a{
+    flex: 0 0 auto;
+    /* 确保每个链接元素占据其内容的宽度  */
+    width: 100%;
+    /* 确保每个链接元素填满父容器的宽度  */
+    display: block;
+    /* 确保链接元素是块级元素  */
+}
+.Cantral img{
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.Cantral-swiper1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.Can_swiper1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.Can_swiper1 a {
+    flex: 0 0 auto;
+    /* 确保每个链接元素占据其内容的宽度  */
+    width: 100%;
+    /* 确保每个链接元素填满父容器的宽度  */
+    display: block;
+    /* 确保链接元素是块级元素  */
+}
+
+.Can_swiper1 img {
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.Cantral-swiper1 .C_swiper-btn1 {
+    display: inline-block;
+    padding: 10px;
+    font-size: 40px;
+    background-color: transparent;
+    color: rgb(255, 105, 0);
+    position: absolute;
+    /* 隐藏原素 */
+    display: none;
+    /* 鼠标箭头变小手 */
+    cursor: pointer;
+}
+
+.Cantral-swiper1 .C_swiper-btn1.prev1 {
+    left: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}
+
+.Cantral-swiper1 .C_swiper-btn1.next1 {
+    right: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}
+
+.Cantral-swiper1:hover .C_swiper-btn1 {
+    display: block;
+}
+
+/* 轮播图底部小圆点 */
+.Cantral-swiper1 .Can_swiper-dot1 {
+    display: flex;
+    /* 居中对齐 */
+    justify-content: center;
+    position: absolute;
+    bottom: 3.2vw;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.Cantral-swiper1 .Can_swiper-dot1 span {
+    display: block;
+    width: 6vw;
+    height: 3px;
+    background-color: #b9b9b9;
+    margin: -1px;
+}
+.dot1.active {
+    /* 您的激活状态样式 */
+    background-color: rgb(255, 105, 0) !important;
+}
+
+.Cantral-swiper2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.Can_swiper2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.Can_swiper2 a {
+    flex: 0 0 auto;
+    /* 确保每个链接元素占据其内容的宽度  */
+    width: 100%;
+    /* 确保每个链接元素填满父容器的宽度  */
+    display: block;
+    /* 确保链接元素是块级元素  */
+}
+
+.Can_swiper2 img {
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.Cantral-swiper2 .C_swiper-btn2 {
+    display: inline-block;
+    padding: 10px;
+    font-size: 40px;
+    background-color: transparent;
+    color: rgb(255, 105, 0);
+    position: absolute;
+    /* 隐藏原素 */
+    display: none;
+    /* 鼠标箭头变小手 */
+    cursor: pointer;
+}
+
+.Cantral-swiper2 .C_swiper-btn2.prev2 {
+    left: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}
+
+.Cantral-swiper2 .C_swiper-btn2.next2 {
+    right: 10px;
+    top: 50%;
+    /* 沿着Y 轴负方向（上）位移自身50% */
+    transform: translateY(-50%);
+}
+
+.Cantral-swiper2:hover .C_swiper-btn2 {
+    display: block;
+}
+
+
+/* 轮播图底部小圆点 */
+.Cantral-swiper2 .Can_swiper-dot2 {
+    display: flex;
+    /* 居中对齐 */
+    justify-content: center;
+    position: absolute;
+    bottom: 3.2vw;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.Cantral-swiper2 .Can_swiper-dot2 span {
+    display: block;
+    width: 6vw;
+    height: 3px;
+    background-color: #b9b9b9;
+    margin: -1px;
+}
+
+.dot2.active {
+    /* 您的激活状态样式 */
+    background-color: rgb(255, 105, 0) !important;
+}
+
+
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 20vw;
+}
+.footer .footer-cantral{
+    width: 1226px;
+    margin: auto;
+}
+.footer .footer-cantral .cantral-links{
+    padding: 40px 0 0;
+}
+.footer .footer-cantral .cantral-links .links{
+    float: left;
+    width: 160px;
+    margin: 0;
+}
+.footer .footer-cantral .cantral-links .links dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.footer .footer-cantral .cantral-links .links dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.footer .footer-cantral .cantral-links .links a{
+    color: #757575;
+}
+.footer .footer-cantral .cantral-links .links a:hover{
+    color: rgb(255, 105, 0);
+}
+
+.footer .footer-cantral .cantral-links .contact{
+    float: right;
+    width: 251px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.footer .footer-cantral .cantral-links .contact .phone{
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6900;
+}
+.footer .footer-cantral .cantral-links .contact p{
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+.footer .footer-cantral .cantral-links .btn-small{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.footer .footer-cantral .cantral-links .btn-line-primary{
+    border: 1px solid #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.footer .footer-cantral .cantral-links .contact a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.footer .footer-cantral .cantral-links .iconfont{
+    font-size: 14px;
+}
+
+
+
+
+/* 回到顶部 */
+#backTop{
+    width: 42px;
+    height: 62px;
+    position: fixed;
+    left: calc(50% + 613px);
+    bottom: 150px;
+    transform: translateX(-100%);
+    z-index: 100;
+    cursor: pointer;
+    background: rgba(128, 128, 128,0.5);
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.iconfont{
+    margin-top: 6px;
+    font-size: 30px;
+}
+#backTop p{
+    padding-top: 3px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
